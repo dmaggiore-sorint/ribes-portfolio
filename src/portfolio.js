@@ -7,3 +7,8 @@ export const about = {
         github: "https://github.com/",
     }
 }
+
+export const projects = {
+    title: "I MIEI PROGETTI",
+    description: "Pariatur incididunt irure laborum qui anim cupidatat. Eiusmod id do cupidatat dolor ullamco cillum. Fugiat est nulla adipisicing reprehenderit et sunt."
+}

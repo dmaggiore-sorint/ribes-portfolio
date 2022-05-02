@@ -55,6 +55,17 @@ h3 {
   margin-right: 0;
 }
 
+
+.projects {
+  text-align: center;
+}
+.projects__description {
+  max-width: 50%;
+  margin: 20px auto 0;
+  line-height: 1.5;
+}
+
+
 @media all and (max-width: 980px) {
   .about__description {
     max-width: 65%;
