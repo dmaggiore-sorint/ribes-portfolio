@@ -6,10 +6,7 @@ import Contacts from "./components/Contacts";
 function App() {
   return (
     <div>
-      <Navbar />
       <About />
-      <Projects />
-      <Contacts />
     </div>
   );
 }

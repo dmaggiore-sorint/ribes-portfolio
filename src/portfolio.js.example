@@ -1,0 +1,9 @@
+export const about = {
+    fullName: "",
+    role: "",
+    description: "",
+    social: {
+        linkedin: "",
+        github: "",
+    }
+}

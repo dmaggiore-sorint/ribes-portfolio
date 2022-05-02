@@ -3,8 +3,65 @@
 * {
   margin: 0;
   padding: 0;
+  line-height: 1;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
+  color: rgb(68, 68, 68);
+}
+
+section {
+  max-width: 1140px;
+  padding: 0 12px;
+  margin: 0 auto 120px;
+}
+
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 24px;
+}
+
+.about {
+  text-align: center;
+}
+.about__title > span {
+  color: rgb(41, 120, 181);
+}
+.about__role {
+  margin-top: 20px;
+}
+.about__description {
+  max-width: 50%;
+  margin: 20px auto 0;
+  line-height: 1.5;
+}
+.about__social {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__social > a {
+  color: rgb(41, 120, 181);
+  margin-right: 30px;
+}
+.about__social > a:last-child {
+  margin-right: 0;
+}
+
+@media all and (max-width: 980px) {
+  .about__description {
+    max-width: 65%;
+  }
+}
+@media all and (max-width: 736px) {
+  .about__description {
+    max-width: 90%;
+  }
 }
