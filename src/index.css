@@ -64,15 +64,37 @@ h3 {
   margin: 20px auto 0;
   line-height: 1.5;
 }
+.projects__swiper {
+  margin-top: 30px;
+}
+.projects__item {
+  border: 1px solid rgb(41, 120, 181);;
+  padding: 10px;
+  box-shadow: 2px 2px 2px #ccc;
+}
+.projects__item > p {
+  margin-top: 20px;
+}
+.projects__item-stack {
+  margin-top: 10px;
+  text-align: right;
+  font-size: small;
+}
 
 
 @media all and (max-width: 980px) {
   .about__description {
     max-width: 65%;
   }
+  .projects__description {
+    max-width: 65%;
+  }
 }
 @media all and (max-width: 736px) {
   .about__description {
+    max-width: 90%;
+  }
+  .projects__description {
     max-width: 90%;
   }
 }
