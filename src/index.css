@@ -81,12 +81,26 @@ h3 {
   font-size: small;
 }
 
+.contacts {
+  text-align: center;
+}
+.contacts__description {
+  max-width: 50%;
+  margin: 20px auto 0;
+  line-height: 1.5;
+}
+.contacts__form {
+  margin-top: 20px;
+}
 
 @media all and (max-width: 980px) {
   .about__description {
     max-width: 65%;
   }
   .projects__description {
+    max-width: 65%;
+  }
+  .contacts__description {
     max-width: 65%;
   }
 }
@@ -96,5 +110,8 @@ h3 {
   }
   .projects__description {
     max-width: 90%;
+  }
+  .contacts__description {
+    max-width: 65%;
   }
 }

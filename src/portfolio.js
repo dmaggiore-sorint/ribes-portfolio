@@ -49,3 +49,9 @@ export const projects = {
     },
   ],
 };
+
+export const contacts = {
+  title: "CONTATTAMI",
+  description:
+    "Nostrud aliqua reprehenderit ex proident veniam qui. Sit duis duis Lorem voluptate pariatur. Laboris aliquip et nisi consequat in. Elit non et occaecat incididunt est eu. Eu non consectetur dolor cupidatat minim labore eu pariatur aute aliquip. Deserunt Lorem et sunt aute.",
+};

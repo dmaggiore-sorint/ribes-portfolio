@@ -8,6 +8,7 @@ function App() {
     <div>
       <About />
       <Projects />
+      <Contacts />
     </div>
   );
 }
