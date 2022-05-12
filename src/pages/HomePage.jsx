@@ -4,14 +4,14 @@ import Projects from "../components/Projects";
 import Contacts from "../components/Contacts";
 import { useState } from "react";
 
-function App() {
+const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={ darkMode ? 'dark' : ''}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <About darkMode={darkMode} />
+      <About />
       <Projects />
-      <Contacts />
+      <Contacts darkMode={darkMode} />
     </div>
   );
 }
