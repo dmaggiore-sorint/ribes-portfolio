@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper";
 
-function CustomSwiper({ children }) {
+const CustomSwiper = ({ children }) => {
   return (
     <Swiper
       spaceBetween={50}

@@ -1,7 +1,7 @@
 import { Switch } from "@mui/material";
 import { about } from "../portfolio";
 
-function Navbar({ darkMode, setDarkMode }) {
+const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <div className="navbar">
       <div className="navbar__container">
