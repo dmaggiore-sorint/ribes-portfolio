@@ -1,0 +1,12 @@
+.card {
+  > .projects__item {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    > p {
+      flex-grow: 1;
+    }
+  }
+}

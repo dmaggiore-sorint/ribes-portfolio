@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Card from '../components/Card';
+import { projects } from "../portfolio";
 
-const BlogPage = ({ darkMode }) => {
+const BlogPage = () => {
   return (
-    <div>BlogPage</div>
+    <section className='blog'>
+      {projects && projects.items.map(item => <Card key={item.title} item={item} />)}
+    </section>
   )
 }
 

@@ -1,0 +1,16 @@
+.blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media all and (max-width: 980px) {
+  .blog {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 736px) {
+  .blog {
+    grid-template-columns: 1fr;
+  }
+}
