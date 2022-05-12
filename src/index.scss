@@ -11,10 +11,15 @@ body {
   color: rgb(68, 68, 68);
 }
 
+.dark {
+  background: rgb(68, 68, 68);
+  color: white;
+}
+
 section {
   max-width: 1140px;
-  padding: 0 12px;
-  margin: 0 auto 120px;
+  padding: 0 12px 120px 12px;
+  margin: 0 auto;
 }
 
 h1 {

@@ -3,12 +3,12 @@ import { about } from "../portfolio";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-const About = ({ darkMode }) => {
+const About = () => {
   return (
     <section id="about" className="about">
       {about?.fullName && (
         <h1 className="about__title">
-          Hi, I am <span>{darkMode ? "Batman" : about.fullName}</span>
+          Hi, I am <span>{ about.fullName }</span>
         </h1>
       )}
       {about?.role && <h3 className="about__role">{about.role}</h3>}
