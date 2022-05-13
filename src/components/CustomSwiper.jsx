@@ -28,7 +28,7 @@ const CustomSwiper = ({ children }) => {
       //   effect='cube'
     >
       {children.map((item) => {
-        return <SwiperSlide>{item}</SwiperSlide>;
+        return <SwiperSlide key={item.key + '_swiper'}>{item}</SwiperSlide>
       })}
     </Swiper>
   );

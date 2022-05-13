@@ -2,7 +2,7 @@
   text-align: center;
 
   &__title > span {
-    color: rgb(41, 120, 181);
+    color: $primaryColor;
   }
 
   &__role {
@@ -23,7 +23,7 @@
   }
 
   &__social > a {
-    color: rgb(41, 120, 181);
+    color: $primaryColor;
     margin-right: 30px;
   }
 

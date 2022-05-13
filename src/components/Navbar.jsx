@@ -3,8 +3,19 @@ import { Link } from 'react-router-dom'
 import { about } from '../portfolio'
 
 const Navbar = ({ darkMode, setDarkMode }) => {
+
+  const setRootDarkMode = (darkMode) => {
+    const root = document.getElementById('root');
+    if (darkMode) {
+      root.classList.add('dark');
+    } else {
+      root.classList.remove('dark');
+    }
+    setDarkMode(darkMode)
+  }
+
   return (
-    <div className="navbar">
+    <div className={`navbar${darkMode ? ' dark' : ''}`}>
       <div className="navbar__container">
         <Link to="/">
           <div className="navbar__logo">{about.abbrevation}</div>
@@ -22,7 +33,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <li>
             <Link to="/blog">blog</Link>
           </li>
-          <Switch onClick={() => setDarkMode(!darkMode)} />
+          <Switch onClick={() => setRootDarkMode(!darkMode)} />
         </ul>
       </div>
     </div>

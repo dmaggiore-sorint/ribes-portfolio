@@ -10,7 +10,7 @@ const Projects = () => {
         <CustomSwiper>
           {projects.items.map((item) => {
             return (
-              <div className="projects__item">
+              <div key={item.title} className="projects__item">
                 <h4>{item.title}</h4>
                 <p>{item.description}</p>
                 <div className="projects__item-stack">{item.stack}</div>
