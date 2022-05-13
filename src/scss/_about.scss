@@ -1,0 +1,44 @@
+.about {
+  text-align: center;
+
+  &__title > span {
+    color: rgb(41, 120, 181);
+  }
+
+  &__role {
+    margin-top: 20px;
+  }
+
+  &__description {
+    max-width: 50%;
+    margin: 20px auto 0;
+    line-height: 1.5;
+  }
+
+  &__social {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__social > a {
+    color: rgb(41, 120, 181);
+    margin-right: 30px;
+  }
+
+  &__social > a:last-child {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 980px) {
+  .about__description {
+    max-width: 65%;
+  }
+}
+@media all and (max-width: 736px) {
+  .about__description {
+    max-width: 90%;
+  }
+}
