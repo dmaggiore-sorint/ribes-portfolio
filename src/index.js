@@ -5,12 +5,14 @@ import './scss/index.scss'
 import HomePage from './pages/HomePage'
 import BlogPage from './pages/BlogPage'
 import Layout from './components/Layout'
+import PostPage from './pages/PostPage'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
 <Router>
   <Routes>
     <Route path="/" element={ <Layout /> }>
+      <Route path="blog/:id" element={ <PostPage /> } />
       <Route path="blog" element={ <BlogPage /> } />
       <Route path="" element={ <HomePage /> } />
     </Route>

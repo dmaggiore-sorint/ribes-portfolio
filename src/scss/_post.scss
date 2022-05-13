@@ -1,0 +1,33 @@
+.post {
+  @extend section;
+  text-align: center;
+
+  &__back {
+    cursor: pointer;
+    color: $primaryColor;
+    font-weight: 300;
+  }
+
+  &__breadcrumb {
+    text-align: left;
+    position: relative;
+    top: -45px;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__image {
+    max-height: 300px;
+    margin-bottom: 50px;
+  }
+
+  &__stack {
+    margin-bottom: 50px;
+    font-size: 12px;
+  }
+}

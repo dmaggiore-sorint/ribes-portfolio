@@ -1,14 +1,27 @@
 .blog {
   @extend section;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-
-  @media all and (max-width: 980px) {
-    grid-template-columns: 1fr 1fr;
+  
+  &__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  &__description {
+    text-align: center;
+    margin-bottom: 50px;
   }
 
-  @media all and (max-width: 736px) {
-    grid-template-columns: 1fr;
+  &__posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+
+    @media all and (max-width: 980px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media all and (max-width: 736px) {
+      grid-template-columns: 1fr;
+    }
   }
 }

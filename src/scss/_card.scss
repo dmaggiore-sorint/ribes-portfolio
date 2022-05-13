@@ -1,4 +1,12 @@
 .card {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: white;
+  text-shadow: 1px 1px $secondaryColor;
+
   > .projects__item {
     min-height: 150px;
     display: flex;
