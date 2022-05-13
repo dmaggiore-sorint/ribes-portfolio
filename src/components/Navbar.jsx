@@ -1,11 +1,14 @@
-import { Switch } from "@mui/material";
-import { about } from "../portfolio";
+import { Switch } from '@mui/material'
+import { Link } from 'react-router-dom'
+import { about } from '../portfolio'
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <div className="navbar">
       <div className="navbar__container">
-        <div className="navbar__logo">{about.abbrevation}</div>
+        <Link to="/">
+          <div className="navbar__logo">{about.abbrevation}</div>
+        </Link>
         <ul>
           <li>
             <a href="#about">about</a>
@@ -17,13 +20,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <a href="#contacts">contacts</a>
           </li>
           <li>
-            <a href="">Blog</a>
+            <Link to="/blog">blog</Link>
           </li>
           <Switch onClick={() => setDarkMode(!darkMode)} />
         </ul>
       </div>
     </div>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
