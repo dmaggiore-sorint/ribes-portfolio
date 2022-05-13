@@ -1,7 +1,7 @@
 import { projects } from "../portfolio";
 import CustomSwiper from "./CustomSwiper";
 
-function Projects() {
+const Projects = () => {
   return (
     <section id="projects" className="projects">
       <h3 className="projects__title">{projects.title}</h3>

@@ -2,13 +2,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper";
 
-function CustomSwiper({ children }) {
+const CustomSwiper = ({ children }) => {
   return (
     <Swiper
       spaceBetween={50}
       slidesPerView={3}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => {}}
+      onSwiper={(swiper) => {}}
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,

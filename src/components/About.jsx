@@ -2,7 +2,7 @@ import { about } from "../portfolio";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-function About({ darkMode }) {
+const About = ({ darkMode }) => {
   return (
     <section id="about" className="about">
       {about?.fullName && (

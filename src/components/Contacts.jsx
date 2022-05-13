@@ -1,7 +1,7 @@
 import { Button, Grid, TextField } from "@mui/material";
 import { contacts } from "../portfolio";
 
-function Contacts() {
+const Contacts = () => {
   return (
     <section id="contacts" className="contacts">
       <h3>{contacts?.title}</h3>

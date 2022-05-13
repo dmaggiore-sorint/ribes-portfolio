@@ -1,6 +1,6 @@
 export const about = {
-  fullName: "Marco Crotti",
-  abbrevation: "MC",
+  fullName: "Daniele Maggiore",
+  abbrevation: "DM",
   role: "Frontend developer",
   description:
     "Et deserunt enim laboris magna cillum. Labore dolore non in deserunt quis nisi nulla esse amet duis dolor proident minim ea. Esse mollit consectetur ex laborum sint. Consequat consectetur aute eu nostrud.",
