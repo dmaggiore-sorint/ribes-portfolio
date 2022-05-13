@@ -2,12 +2,12 @@ import { about } from "../portfolio";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-const About = ({ darkMode }) => {
+const About = () => {
   return (
     <section id="about" className="about">
       {about?.fullName && (
         <h1 className="about__title">
-          Hi, I am <span>{darkMode ? "Batman" : about.fullName}</span>
+          Hi, I am <span>{about.fullName}</span>
         </h1>
       )}
       {about?.role && <h3 className="about__role">{about.role}</h3>}
@@ -17,12 +17,12 @@ const About = ({ darkMode }) => {
       {about.social && (
         <div className="about__social">
           {about?.social?.linkedin && (
-            <a href={about.social.linkedin} target="_blank">
+            <a href={about.social.linkedin} target="_blank" rel="noreferrer">
               <LinkedInIcon fontSize="large" />
             </a>
           )}
           {about?.social?.github && (
-            <a href={about.social.github} target="_blank">
+            <a href={about.social.github} target="_blank" rel="noreferrer">
               <GitHubIcon fontSize="large" />
             </a>
           )}
